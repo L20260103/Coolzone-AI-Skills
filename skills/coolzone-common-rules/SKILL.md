@@ -13,7 +13,7 @@ description: >-
 - 语言：对方用什么语言就用什么语言回。PO、邮件、Certificate、Letter 正文仍然用英文。
 - 交接文档 `grok-handover.md` 最初是按 Lawrence 一个人写的。文档里的「Lawrence」一律理解为当前使用者，只有属于 Lawrence 本人的东西除外（他的姓名职位、邮件签名档、签名图片）。
 - 邮件签名档和 Letter 签名人都用当前使用者自己的（谁负责就用谁的签名）。还没有他的签名档或签名图片时先问，不要拿别人的代用。
-- 签名图片放在 `skills/coolzone-certificate/signatures/<名字>.png`：目前有 `lawrence.png`；`jack.png`、`ping.png` 待补。
+- 签名图片放在 `skills/coolzone-certificate/signatures/<名字>.png`：目前有 `lawrence.png`、`jack.png`；`ping.png` 待补。
 - 收件人、发件邮箱和邮件习惯以当前使用者最近一封同类邮件为准；邮件草稿存进他自己的 Outlook。
 
 ## 开工前先读（我电脑上的共享位置）
@@ -56,6 +56,6 @@ description: >-
 每次用 UpdateSkill **新建或改写**任何一个 Coolzone skill 之后：
 1. 同步到 `/home/box/coolzone/Grok-Workplace/skills/<skill-id>/`（以及 `/home/box/coolzone/Workspace/skills/`）。
 2. 同步到 GitHub 仓库 https://github.com/L20260103/Coolzone-Jack 的 `skills/<skill-id>/`（公开仓库：只放 SKILL.md 和脚本，**不放**签名图片、Word 模版、handover）。
-3. 能访问 G 盘时，也写到 `G:\My Drive\CoolZone AI\Grok Bot\Workplace\skills\<skill-id>\`。
+3. 同步到 Google Drive Coolzone 文件夹（id `1hdByYeH43WPBRtZhcOb1xdJBpJL8wZsd`）的 `skills/<skill-id>/`，原文件原地更新；能访问 G 盘时也写到 `G:\My Drive\CoolZone AI\Grok Bot\Workplace\skills\<skill-id>\`。
 4. 不要覆盖同目录里已有的模版/签名等资产；只更新 skill 正文和确属该 skill 的 helper。
 5. 改完在汇报里说一句已同步到哪里。

@@ -15,8 +15,8 @@ description: >-
 
 ## 签名人（谁负责就用谁的签名）
 - 先确认这份 Letter 由谁负责签字；默认是当前使用者，不确定就问。
-- 签名图片在 `signatures/<名字>.png`：`lawrence.png`（已有），`jack.png`、`ping.png`（待补）。签字人的图片还没有时先问，绝不拿别人的签名代用。
-- Rev 3 模版里内嵌的是 Lawrence 的签名和名字。用 `fill_letter.py` 时在 content.json 里同时传 `signer`（签字人全名）和 `signature_image`（他的签名图片路径），脱本会把两者一起换掉。生成后打开检查名字和签名是不是同一个人。
+- 签名图片在 `signatures/<名字>.png`：`lawrence.png`、`jack.png`（已有），`ping.png`（待补）。签字人的图片还没有时先问，绝不拿别人的签名代用。
+- Rev 3 模版里内嵌的是 Lawrence 的签名和名字。用 `fill_letter.py` 时在 content.json 里同时传 `signer`（签字人全名）和 `signature_image`（他的签名图片路径），脚本会把两者一起换掉。生成后打开检查名字和签名是不是同一个人。
 - 签名只用在 Declaration Letter 上。
 
 ## 步骤
