@@ -55,7 +55,7 @@ description: >-
 ## Skill 备份（强制）
 每次用 UpdateSkill **新建或改写**任何一个 Coolzone skill 之后：
 1. 同步到 `/home/box/coolzone/Grok-Workplace/skills/<skill-id>/`（以及 `/home/box/coolzone/Workspace/skills/`）。
-2. 同步到 GitHub 仓库 https://github.com/L20260103/Coolzone-Jack 的 `skills/<skill-id>/`（公开仓库：只放 SKILL.md 和脚本，**不放**签名图片、Word 模版、handover）。
+2. 同步到 GitHub 仓库 https://github.com/L20260103/Coolzone-AI-Skills 的 `skills/<skill-id>/`（公开仓库：只放 SKILL.md 和脚本，**不放**签名图片、Word 模版、handover）。
 3. 同步到 Google Drive Coolzone 文件夹（id `1hdByYeH43WPBRtZhcOb1xdJBpJL8wZsd`）的 `skills/<skill-id>/`，原文件原地更新；能访问 G 盘时也写到 `G:\My Drive\CoolZone AI\Grok Bot\Workplace\skills\<skill-id>\`。
 4. 不要覆盖同目录里已有的模版/签名等资产；只更新 skill 正文和确属该 skill 的 helper。
 5. 改完在汇报里说一句已同步到哪里。
