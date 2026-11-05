@@ -16,7 +16,10 @@ content.json:
     "Should you have any questions ..."
   ],
   "signer": "Lawrence J.J. Lao",     # optional, default keeps template
-  "sign_date": "30/10/2026"           # optional, Date: line under signature; default = date
+  "sign_date": "30/10/2026",          # optional, Date: line under signature; default = date
+  "signature_image": "signatures/lawrence.png"  # optional PNG; replaces the template's embedded
+                                                 # signature (word/media/signature.png). Relative
+                                                 # paths resolve against content.json's folder.
 }
 
 Only the letter text is replaced; the letterhead (header), footer, fonts and
@@ -100,6 +103,14 @@ def main(tpl, js, out):
     # rebuild body keeping anything between paragraphs (none in this template)
     x = x[:bstart] + ''.join(ps) + x[sect:]
     open(path, 'w', encoding='utf-8').write(x)
+    sig = c.get('signature_image')
+    if sig:
+        if not os.path.isabs(sig):
+            sig = os.path.join(os.path.dirname(os.path.abspath(js)), sig)
+        dst = os.path.join(tmp, 'word', 'media', 'signature.png')
+        if not os.path.exists(dst):
+            raise SystemExit('template has no word/media/signature.png to replace')
+        shutil.copyfile(sig, dst)
     if os.path.exists(out):
         os.remove(out)
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
