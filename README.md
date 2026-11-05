@@ -1,4 +1,4 @@
-# Coolzone-Jack
+# Coolzone AI Skills
 
 Agent skills for Coolzone (czair.com.au), shared by Jack, Lawrence, and Ping. Templates and the handover document are intentionally not included in this public repository. Signature images live in `skills/coolzone-certificate/signatures/` locally and are intentionally not committed.
 
